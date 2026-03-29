@@ -1,0 +1,52 @@
+{
+  "name": "knowz-mcp",
+  "version": "0.4.2",
+  "description": "Frictionless knowledge management via the Knowz MCP server -- search, save, and query knowledge across vaults",
+  "type": "module",
+  "bin": {
+    "knowz-mcp": "./bin/knowz-mcp.mjs"
+  },
+  "files": [
+    "bin/",
+    "agents/",
+    "skills/",
+    ".claude-plugin/",
+    "platform_adapters.md",
+    "knowz-vaults.example.md",
+    "knowz-pending.example.md",
+    "enterprise.example.json"
+  ],
+  "scripts": {
+    "prepublishOnly": "node bin/knowz-mcp.mjs --version"
+  },
+  "keywords": [
+    "ai",
+    "knowledge",
+    "knowz",
+    "mcp",
+    "vaults",
+    "claude",
+    "codex",
+    "gemini",
+    "knowledge-management",
+    "semantic-search"
+  ],
+  "author": {
+    "name": "Alex Headscarf"
+  },
+  "homepage": "https://github.com/knowz-io/knowz-skills",
+  "bugs": {
+    "url": "https://github.com/knowz-io/knowz-skills/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knowz-io/knowz-skills.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
